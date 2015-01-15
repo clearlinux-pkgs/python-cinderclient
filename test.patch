@@ -1,0 +1,25 @@
+From bcd85ca2a776d8b277bade7a4443e45d26c4d171 Mon Sep 17 00:00:00 2001
+From: Alberto Murillo <alberto.murillo.silva@intel.com>
+Date: Fri, 24 Jul 2015 14:52:39 -0500
+Subject: [PATCH] test
+
+---
+ test-requirements.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/test-requirements.txt b/test-requirements.txt
+index fd514fe..48106c7 100644
+--- a/test-requirements.txt
++++ b/test-requirements.txt
+@@ -2,7 +2,7 @@
+ # of appearance. Changing the order has an impact on the overall integration
+ # process, which may cause wedges in the gate later.
+ # Hacking already pins down pep8, pyflakes and flake8
+-hacking<0.9,>=0.8.0
++hacking
+ coverage>=3.6
+ discover
+ fixtures>=0.3.14
+-- 
+2.1.0
+
