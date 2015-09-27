@@ -46,3 +46,9 @@ docutils-python
 Jinja2
 markupsafe-python
 linecache2-python
+funcsigs-python
+debtcollector-python
+wrapt-python
+monotonic-python
+oslo.i18n-python
+oslo.i18n
