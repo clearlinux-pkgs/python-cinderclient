@@ -4,7 +4,7 @@
 #
 Name     : python-cinderclient
 Version  : 1.4.0
-Release  : 13
+Release  : 14
 URL      : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-1.4.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-1.4.0.tar.gz
 Summary  : OpenStack Block Storage API Client Library
