@@ -1,18 +1,85 @@
 CHANGES
 =======
 
+1.6.0
+-----
+
+* Remove replication v2 calls
+* Update minimum tox version to 1.8
+* snapshot-list now supports filtering by tenant
+* Fix return type in consistencygroups docstring
+* Updated from global requirements
+* Use instanceof instead of type
+* Don't print HTTP codes for non-HTTP errors
+* Add replication v2.1 (cheesecake) calls
+* Add release notes for return-request-id-to-caller
+* Remove pypy from tox environment list
+* Extra 'u' in output of cinder cli commands
+* Add extra_specs_list test
+* Add request_ids attribute to resource objects
+* Fix return type in backup docstring
+* Fix omission of request_ids returned to user
+* Eliminate unnecessary character
+* Avoid logging sensitive info in http requests
+* Add request_ids attribute to resource objects
+* Add request_ids attribute to resource objects
+* Provide consistency for Wrapper classes
+* Allow "cinder backup-delete" to delete multiple backups in one request
+* Updated from global requirements
+* Fix some flake8 violations
+* Bootable filter for listening volumes from CLI
+* Remove debug statement
+* is_public=N/A in output of cinder type-update
+* Return wrapper classes with request_ids attribute
+* Pass insecure option to HTTPClient
+* Add Wrapper classes for list, dict, tuple
+* Remove argparse from requirements
+* Fix sort problem in snapshot and backup list
+* Code is hosted on git.openstack.org
+* Fix link for OpenStack manual
+* Update HACKING with current information
+* Word Misspelling
+* Trival: Remove 'MANIFEST.in'
+* Remove openstack-common.conf
+* Make _discover_extensions public
+* improve readme contents
+* Set default service type to 'volumev2'
+* Updated from global requirements
+* Fix help message in backup reset-state
+* Remove the mutable default arguments "[]"
+* Do not require functional_creds.conf for functional tests
+* Fix for 'quota-delete' call to API v2
+* Removes MANIFEST.in as it is not needed explicitely by PBR
+* Drop py33 support
+* Add to_dict method to Resource class
+* Add reno for release notes management
+* Deprecated tox -downloadcache option removed
+* Updated from global requirements
+* Updated from global requirements
+* Pass proxy environment variable to tox
+* Add optional argument to list subcommand
+* Remove py26 support
+* Delete python bytecode before every test run
+* support for snapshot management
+* Fix comma location in comment
+
 1.5.0
 -----
 
+* Remove ureachable code in fakes.py
 * Updated from global requirements
 * Adds v2 replication support
 * Fix v2 qos-key command
+* Add functional tests: backup creation and deletion
 * Use oslo_utils encodeutils and strutils
+* CLI for backup snapshots
 * Update CONTRIBUTING.md to CONTRIBUTING.rst
 * Update help message for cinder migrate
 * Fix volume size units to match the API
 * Fix functional tests fail on the env with https
+* Add the version attribute to the Client class
 * Adding backup-reset-state to CLI
+* Put py34 first in the env order of tox
 * Implement cinder type-show
 * Updated from global requirements
 * Update release notes for 1.3.1 and 1.4.0 releases
