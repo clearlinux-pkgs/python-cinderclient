@@ -4,7 +4,7 @@
 #
 Name     : python-cinderclient
 Version  : 1.6.0
-Release  : 18
+Release  : 19
 URL      : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-1.6.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-1.6.0.tar.gz
 Summary  : OpenStack Block Storage API Client Library
@@ -12,9 +12,11 @@ Group    : Development/Tools
 License  : Apache-2.0
 Requires: python-cinderclient-bin
 Requires: python-cinderclient-python
+BuildRequires : Jinja2
 BuildRequires : Sphinx-python
 BuildRequires : coverage-python
 BuildRequires : discover-python
+BuildRequires : docutils
 BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : fixtures-python
