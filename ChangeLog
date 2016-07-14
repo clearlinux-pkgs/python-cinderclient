@@ -1,21 +1,68 @@
 CHANGES
 =======
 
+1.8.0
+-----
+
+* Don't enable lazy translation when loading client
+* Support for cinder backup force delete
+
+1.7.1
+-----
+
+* Fix upload_to_image method
+* Remove deprecated tempest_lib and use tempest.lib
+
+1.7.0
+-----
+
+* Updated from global requirements
+* Don't reset volume status when resetting migration status
+* Support --os-key option
+* Change api_version to self.api_version
+* Updated from global requirements
+* Remove Python 2.5 compat shim
+* Add options when uploading images to Glance
+* Only print volume ID in migration messages
+* Add docs for running tests
+* Use six.moves.urllib.parse urlencode
+* Updated from global requirements
+* Support api-microversions
+* Add /v3 endpoint support for cinderclient
+* Add pylint tox env
+* Add tests for delete type by name
+* Fix api v2 so that you can delete more than one volume_type at a time
+* Fix wrong request url when retrieving multiple request
+* Graduate to oslo.i18n and cleanup incubator usage
+* Revert "Cleanup for Replication v2: remove 'replication-promote'"
+* Revert "Cleanup for Replication v2: remove 'replication-reenable'."
+* Removed Extra code
+* Cleanup for Replication v2: remove 'replication-reenable'
+* Cleanup for Replication v2: remove 'replication-promote'
+* fix formatting of return-request-id-to-caller release note
+* Update reno for stable/mitaka
+* Fix docstring according to function
+* Add docstrings for chessecake methods
+
 1.6.0
 -----
 
 * Remove replication v2 calls
+* Fix Resource.__eq__ mismatch semantics of object equal
 * Update minimum tox version to 1.8
 * snapshot-list now supports filtering by tenant
 * Fix return type in consistencygroups docstring
 * Updated from global requirements
 * Use instanceof instead of type
+* Add --cascade to volume delete
 * Don't print HTTP codes for non-HTTP errors
+* Add backup list sorted by data_timestamp
 * Add replication v2.1 (cheesecake) calls
 * Add release notes for return-request-id-to-caller
 * Remove pypy from tox environment list
 * Extra 'u' in output of cinder cli commands
 * Add extra_specs_list test
+* Use ostestr as a tests runner
 * Add request_ids attribute to resource objects
 * Fix return type in backup docstring
 * Fix omission of request_ids returned to user
@@ -24,7 +71,7 @@ CHANGES
 * Add request_ids attribute to resource objects
 * Add request_ids attribute to resource objects
 * Provide consistency for Wrapper classes
-* Allow "cinder backup-delete" to delete multiple backups in one request
+* Allow  "cinder backup-delete" to delete multiple backups in one request
 * Updated from global requirements
 * Fix some flake8 violations
 * Bootable filter for listening volumes from CLI
@@ -38,6 +85,8 @@ CHANGES
 * Code is hosted on git.openstack.org
 * Fix link for OpenStack manual
 * Update HACKING with current information
+* Keep py3.X compatibility for urllib
+* Change extension module naming to a shorter one
 * Word Misspelling
 * Trival: Remove 'MANIFEST.in'
 * Remove openstack-common.conf
@@ -142,7 +191,7 @@ CHANGES
 * Add encryption-type-update to cinderclient
 * Set max volume size limit for the tenant
 * Add tests for python-cinderclient and style fix
-* The is_public filter in VolumeTypeManager.list broke the find in VolumeTypeAccessManager, which caused all commands which should have taken a volume_type name to fail. I have choosen to fix this by effectively removing the filter in the client (and the --all argument to type-list). This is OK, since Cinder implements the filtering by user anyway. The consequence of this change is that the Admin user will always see the entire list (including private types) every time they execute type-list
+* The is_public filter in VolumeTypeManager.list broke the find in VolumeTypeAccessManager, which caused all commands which should have taken a volume_type name to fail.  I have choosen to fix this by effectively removing the filter in the client (and the --all argument to type-list). This is OK, since Cinder implements the filtering by user anyway.  The consequence of this change is that the Admin user will always see the entire list (including private types) every time they execute type-list
 * Add volume multi attach support
 * Fix functional post test_hook
 * Fix condition in CheckSizeArgForCreate parser action
