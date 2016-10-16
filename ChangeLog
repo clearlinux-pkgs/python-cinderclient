@@ -1,10 +1,75 @@
 CHANGES
 =======
 
+1.9.0
+-----
+
+* Deleting volume metadata keys with a single request
+* Add v3 user messages with pagination
+* Remove self.__dict__ for formatting strings
+* Wrap GroupType class's function with api_version
+* Make Resource class's function can be wraped by api_version
+* Wrap cluster related function with api_version
+* Wrap volume_backup's update function with api_version
+* Wrap group type and group spec with api_version
+* Replace functions 'Dict.get' and 'del' with 'Dict.pop'
+* Changed backup-restore to accept backup name
+* Enhance help message of upload_to_image
+* Fix NoneType error for cinderclient v1
+* Fix useless api_version of Manager class
+* Update the home-page with developer documentation
+* deprecate command `cinder endpoints`
+* Add "start_version" and "end_version" support to  argparse
+* Tests for testing volume-create command
+* Updated from global requirements
+* Use 'six' instead of oslo_utils.strutils.six
+* Add backup-update
+* Change api-version help to indicate server API
+* Use self.ks_logger instead of ks_logger
+* print endpoints using new keystoneauth catalog object
+* Add tenant_id parameter to limits
+* Changed backup-restore to accept backup name
+* Replace OpenStack LLC with OpenStack Foundation
+* Switch to keystoneauth
+* List manageable volumes and snapshots
+* Add support for group snapshots
+* Add generic volume groups
+* Make APIVersion's null check more pythonic
+* Add Negative tests for cinder volume extend command
+* Add Negative tests for cinder volume create command
+* Fix Unicode error printing extra-specs
+* Fix string interpolation to delayed to be handled by the logging code
+* Add group types and group specs
+* Updated from global requirements
+* Add Python3.5 classifier and venv
+* Add api-version to get server versions
+* Updated from global requirements
+* Fix output error for type-show command
+* OS_TENANT_NAME is not required when we have OS_PROJECT_NAME
+* Fix _get_rate_limit when resp is None
+* Cinder client should retry with Retry-After value
+* Fix batch deleting issue in volume_type.unset_keys()
+* base.Resource not define __ne__() built-in function
+* Log request-id for each api call
+* Add strict Boolean checking
+* Delete mox in cinderclient
+* Fix Service.__repr__ to remove the undefined attribute
+* Fix Capabilities.__repr__ to remove the undefined attribute
+* Add cluster related commands
+* Fix python 2,3 compatibility issue with six
+* Fixing parsing problem of cascade in client
+* Fix argument order for assertEqual to (expected, observed)
+* Make sure --bypass-url honored if specified
+* Updated from global requirements
+* Support name option for volume restore
+* Updated from global requirements
+
 1.8.0
 -----
 
 * Don't enable lazy translation when loading client
+* Support for snapshot force delete
+* Make __repr__ print encryption_id for VolumeEncryptionType class
 * Support for cinder backup force delete
 
 1.7.1
@@ -12,6 +77,8 @@ CHANGES
 
 * Fix upload_to_image method
 * Remove deprecated tempest_lib and use tempest.lib
+* Fix the incorrect alignment
+* Make dict.keys() PY3 compatible
 
 1.7.0
 -----
@@ -21,6 +88,7 @@ CHANGES
 * Support --os-key option
 * Change api_version to self.api_version
 * Updated from global requirements
+* Fix authentication issue
 * Remove Python 2.5 compat shim
 * Add options when uploading images to Glance
 * Only print volume ID in migration messages
@@ -88,6 +156,7 @@ CHANGES
 * Keep py3.X compatibility for urllib
 * Change extension module naming to a shorter one
 * Word Misspelling
+* Replace assertTrue(isinstance()) by optimal assert
 * Trival: Remove 'MANIFEST.in'
 * Remove openstack-common.conf
 * Make _discover_extensions public
