@@ -1,6 +1,115 @@
 CHANGES
 =======
 
+2.0.1
+-----
+
+* Change "--sort" description in help message
+* Fix service-list command for API v.3.0-3.6
+* Fix all_tenants doesn't work for group list
+
+2.0.0
+-----
+
+* Make V3 the default and fixup version reporting
+* Remove duplicate get_highest_client_server_version
+* Add get_highest_version method
+* Remove unused and duplicated fake_client module
+* Disable functional tests with multiattach
+* Fix discover_version
+* Updated from global requirements
+* Remove cinder credentials command
+* Group show command should be in V3
+* Remove duplicate columns from list output
+* Updated from global requirements
+* Add start_version check for do_list() image_metadata option
+* Handle log message interpolation by the logger
+* Add --metadata option to API v2 cinder list command again
+* static method to get_highest_client_server_version
+* Bump MAX_VERSION to 3.27
+* Update reno for stable/ocata
+* Add print_function import
+
+1.11.0
+------
+
+* Attach/Detach V2
+* static method to get_server_version
+* Fix getting metadata attr error in snapshot-list command
+* Fix test_auth_with_keystone_v3 test
+* Support filter volumes by group_id
+* Updated from global requirements
+* Update param docstring to ducument search_opts
+* Removed unnecessary 'service_type' decorator
+* x-openstack-request-id logged twice in logs
+* Fix adding non-ascii attrs to Resource objects error
+* Fix v3 volume list based on image_metadata
+* Updated from global requirements
+* Fix spelling of consistency groups
+* Metadata based snapshop filtering
+* _human_id_cache or _uuid_cache error about completion_cache
+* Enable coverage report in console output
+* Python3 common patterns
+* modify the wrong comment of the Client class
+* Fix the optional argument of cinder api
+* Add convertation of query parameters to string
+* (Trival)Modify the version_header with self.version_header
+* Support Keystone V3 with HttpClient
+
+1.10.0
+------
+
+* Updated from global requirements
+* Refactor v2 and v3 APIs support
+* Add Constraints support
+* Remove extra 'u' from cli output
+* Handle error response for webob>=1.6.0
+* Update hacking version
+* stop adding log handler
+* Updated from global requirements
+* Replace six.iteritems(iter) with iter.items()
+* Show team and repo badges on README
+* add an alternative way of authenticating client
+* Minor refactoring for nested try-block
+* Updated from global requirements
+* Fix test_version_discovery test
+* Move trace ID print statement to finally
+* Fix typo in set unicode metadata key
+* Mask passwords when logging HTTP req/resp bodies
+* Updated from global requirements
+* Fix typos in the files
+* Optimize: add build_query_param method to clean code
+* Updated from global requirements
+* Move old oslo-incubator code out of openstack/common
+* Use 'ostestr {posargs}' to run functional tests
+* Fix help message for 'type-list' command
+* Updated from global requirements
+* Update release notes information for reno
+* Update --endpoint-type dest to os_endpoint_type
+* Remove unused keystone service catalog parse file
+* Help msg and output info should support il8n
+* Updated from global requirements
+* Fix some PEP8 issues and Openstack Licensing
+* Fix volume type 'is_public' flag update
+* Print backtrace for exception when in debug mode
+* Enable release notes translation
+* Updated from global requirements
+* Update to current version of hacking
+* Replace 'MagicMock' with 'Mock'
+* Missing client version 3.0 support for "delete_metadata" method
+* TrivialFix: Removed redundant 'the'
+* Import module instead of object
+* remove raise "e"
+* Fix error during set unicode metadata key
+* Removed multiple import from shell.py
+* Remove white space between print and ()
+* Remove assertTableStruct from ClientTestBase
+* Parse filter item "name" correctly for snapshot-list
+* Showing the metadata readonly value as a separate field
+* Modify assertTrue
+* Update reno for stable/newton
+* Add cinder tests for cinder volume create commands with parameters
+
 1.9.0
 -----
 
@@ -29,8 +138,10 @@ CHANGES
 * print endpoints using new keystoneauth catalog object
 * Add tenant_id parameter to limits
 * Changed backup-restore to accept backup name
+* AttributeError when print service object
 * Replace OpenStack LLC with OpenStack Foundation
 * Switch to keystoneauth
+* Remove discover from test-requirements
 * List manageable volumes and snapshots
 * Add support for group snapshots
 * Add generic volume groups
@@ -60,6 +171,7 @@ CHANGES
 * Fixing parsing problem of cascade in client
 * Fix argument order for assertEqual to (expected, observed)
 * Make sure --bypass-url honored if specified
+* Fix "ref[project_name]"
 * Updated from global requirements
 * Support name option for volume restore
 * Updated from global requirements
@@ -68,6 +180,7 @@ CHANGES
 -----
 
 * Don't enable lazy translation when loading client
+* Volume detail support glance_metadata in CLI
 * Support for snapshot force delete
 * Make __repr__ print encryption_id for VolumeEncryptionType class
 * Support for cinder backup force delete
