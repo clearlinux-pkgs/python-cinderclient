@@ -6,7 +6,7 @@
 #
 Name     : python-cinderclient
 Version  : 2.0.1
-Release  : 28
+Release  : 29
 URL      : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-2.0.1.tar.gz
 Source0  : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-2.0.1.tar.gz
 Source99 : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-2.0.1.tar.gz.asc
