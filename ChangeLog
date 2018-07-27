@@ -1,11 +1,28 @@
 CHANGES
 =======
 
+4.0.0
+-----
+
+* Reflect multiattach deprecation in help text
+* Remove replication v1 support
+* Remove unnecessary parameters from volume create APIs
+* Update pylint to work with python 3
+* Add reno to requirements
+* Remove deprecated CLI options
+* Switch from ostestr to stestr
+* Transfer snapshots with volumes
+* Add release note for ability to set attachment mode
+* fix tox python3 overrides
+* Add mode option to attachment-create
+* Remove initialization of logger if logger is None
+
 3.6.1
 -----
 
 * Keep is\_public usage backwards compatible
 * unable to create group from src in cinderclient
+* Use api version 3 for functional test
 * Fix failing functional test cases
 * Remove PyPI downloads
 
