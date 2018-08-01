@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+4.0.1
+-----
+
+* Allow volume-transfer creation < 3.55 microversion
+
 4.0.0
 -----
 

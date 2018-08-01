@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xC36CDCB4DF00C68C (infra-root@openstack.org)
 #
 Name     : python-cinderclient
-Version  : 4.0.0
-Release  : 32
-URL      : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.0.0.tar.gz
-Source0  : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.0.0.tar.gz
-Source99 : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.0.0.tar.gz.asc
+Version  : 4.0.1
+Release  : 33
+URL      : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.0.1.tar.gz
+Source0  : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.0.1.tar.gz
+Source99 : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.0.1.tar.gz.asc
 Summary  : OpenStack Block Storage API Client Library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -29,9 +29,6 @@ Requires: simplejson
 Requires: six
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
-BuildRequires : pip
-BuildRequires : python3-dev
-BuildRequires : setuptools
 
 %description
 Team and repository tags
@@ -73,14 +70,14 @@ python3 components for the python-cinderclient package.
 
 
 %prep
-%setup -q -n python-cinderclient-4.0.0
+%setup -q -n python-cinderclient-4.0.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532704874
+export SOURCE_DATE_EPOCH=1533153394
 python3 setup.py build -b py3
 
 %install
