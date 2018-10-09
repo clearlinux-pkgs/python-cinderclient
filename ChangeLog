@@ -1,6 +1,25 @@
 CHANGES
 =======
 
+4.1.0
+-----
+
+* Default help output to include MV updates
+* [Trivial] Add backup-id to 'size' param info
+* Fix encoding of query parameters
+* Fix functional error check for invalid volume create size
+* Use templates for cover and lower-constraints
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+* \_\_repr\_\_ crashes when empty dict passed
+* Update reno for stable/rocky
+* refactor the getid method base.py
+* Fix endpoint identification for api-version query
+* Fix backwards compat for volume transfer < 3.55
+* update wrong link
+
 4.0.1
 -----
 
@@ -19,6 +38,7 @@ CHANGES
 * Transfer snapshots with volumes
 * Add release note for ability to set attachment mode
 * fix tox python3 overrides
+* [Optimize] Update help text for hint argument
 * Add mode option to attachment-create
 * Remove initialization of logger if logger is None
 
