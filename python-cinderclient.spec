@@ -6,17 +6,17 @@
 #
 Name     : python-cinderclient
 Version  : 4.1.0
-Release  : 34
+Release  : 35
 URL      : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.1.0.tar.gz
 Source99 : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.1.0.tar.gz.asc
 Summary  : OpenStack Block Storage API Client Library
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: python-cinderclient-bin
-Requires: python-cinderclient-python3
-Requires: python-cinderclient-license
-Requires: python-cinderclient-python
+Requires: python-cinderclient-bin = %{version}-%{release}
+Requires: python-cinderclient-license = %{version}-%{release}
+Requires: python-cinderclient-python = %{version}-%{release}
+Requires: python-cinderclient-python3 = %{version}-%{release}
 Requires: Babel
 Requires: Sphinx
 Requires: keystoneauth1
@@ -77,13 +77,13 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1539049771
+export SOURCE_DATE_EPOCH=1541271972
 python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/python-cinderclient
-cp LICENSE %{buildroot}/usr/share/doc/python-cinderclient/LICENSE
+mkdir -p %{buildroot}/usr/share/package-licenses/python-cinderclient
+cp LICENSE %{buildroot}/usr/share/package-licenses/python-cinderclient/LICENSE
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -98,7 +98,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/doc/python-cinderclient/LICENSE
+/usr/share/package-licenses/python-cinderclient/LICENSE
 
 %files python
 %defattr(-,root,root,-)
