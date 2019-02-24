@@ -6,7 +6,7 @@
 #
 Name     : python-cinderclient
 Version  : 4.1.0
-Release  : 36
+Release  : 37
 URL      : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.1.0.tar.gz
 Source99 : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.1.0.tar.gz.asc
@@ -18,21 +18,21 @@ Requires: python-cinderclient-license = %{version}-%{release}
 Requires: python-cinderclient-python = %{version}-%{release}
 Requires: python-cinderclient-python3 = %{version}-%{release}
 Requires: Babel
-Requires: Sphinx
 Requires: keystoneauth1
-Requires: openstackdocstheme
 Requires: oslo.i18n
 Requires: oslo.utils
 Requires: pbr
-Requires: reno
 Requires: simplejson
 Requires: six
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
 
 %description
+========================
 Team and repository tags
-        ========================
+========================
+.. image:: https://governance.openstack.org/tc/badges/python-cinderclient.svg
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package bin
 Summary: bin components for the python-cinderclient package.
@@ -77,7 +77,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541271972
+export SOURCE_DATE_EPOCH=1551029377
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install
