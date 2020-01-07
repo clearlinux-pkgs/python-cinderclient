@@ -6,7 +6,7 @@
 #
 Name     : python-cinderclient
 Version  : 4.1.0
-Release  : 40
+Release  : 41
 URL      : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.1.0.tar.gz
 Source99 : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-4.1.0.tar.gz.asc
