@@ -1,2 +1,8 @@
 # This file contains recursive sources that require this package
+glance_store
+heat
 horizon
+ironic
+nova
+python-openstackclient
+sahara
