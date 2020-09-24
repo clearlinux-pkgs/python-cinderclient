@@ -6,7 +6,7 @@
 #
 Name     : python-cinderclient
 Version  : 7.1.0
-Release  : 44
+Release  : 45
 URL      : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-7.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-7.1.0.tar.gz
 Source1  : http://tarballs.openstack.org/python-cinderclient/python-cinderclient-7.1.0.tar.gz.asc
